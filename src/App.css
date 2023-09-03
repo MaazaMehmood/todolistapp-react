@@ -33,7 +33,7 @@ h3 {
 
 .todowrapper {
   background: #ffff;
-  margin-top: 3rem;
+  margin: 3rem 0;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 5px 10px 10px #989a9a;
@@ -87,6 +87,11 @@ h3 {
 
 .fa-trash {
   margin-left: 0.75rem;
+}
+
+.fa-trash:hover, .fa-penToSquare:hover {
+  transform: scale(1.5);
+  transition: .3s ease-in-out;
 }
 
 .completed {

@@ -4,6 +4,8 @@ import TodoList from './TodoList';
 import {v4 as uuidv4} from 'uuid';
 uuidv4();
 
+
+
 function TodoWrapper() {
     const [todos, setTodos] = useState([]);
     const addTodo = todo => {
@@ -31,16 +33,16 @@ function TodoWrapper() {
         setTodos(update);
     }
 
-  return (
-    <>
-    <h1>TODO LIST</h1>
-    <div className='todowrapper'>
-        <h3>getting things done!</h3>
-        <TodoForm addTodo={addTodo} />
-        <TodoList  todos={todos} deleteTask={handleDelete} toggleComp={toggleComplete} editTask={handleEdit} updateTask={updateTask}/>
-    </div>
-    </>
-  );
+    return (
+        <>
+        <h1>TODO LIST</h1>
+        <div className='todowrapper'>
+            <h3>getting things done!</h3>
+            <TodoForm addTodo={addTodo} />
+            <TodoList  todos={todos} deleteTask={handleDelete} toggleComp={toggleComplete} editTask={handleEdit} updateTask={updateTask}/>
+        </div>
+        </>
+    );
 }
 
 export default TodoWrapper;
